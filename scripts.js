@@ -89,7 +89,6 @@ function kelvin_to_fahrenheit(value) {
 };
 
 $("main").addEventListener("change", (e) => {
-    console.info(e);
     switch (input_temp_type.value) {
         case "celsius":
             switch (target_temp.value) {
@@ -110,12 +109,10 @@ $("main").addEventListener("change", (e) => {
         case "fahrenheit":
             switch (target_temp.value) {
                 case "celsius":
-                    console.info("Execute")
                     fahrenheit_to_celsius(input_temp.value);
                     break;
                 
                 case "kelvin":
-                    console.info("Execute")
                     fahrenheit_to_kelvin(input_temp.value);
                     break;
                 
